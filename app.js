@@ -37,13 +37,12 @@ function pesquisar() {
         // Utiliza template literals (``) para facilitar a construção da string e inserir as propriedades do objeto.
             resultados += `<div class="item-resultado"> <h2> ${blocoInf.nome} </h2> <p class="descricao-meta"> ${blocoInf.habitat} <br> ${blocoInf.dieta} <br> ${blocoInf.curiosidade} </p> <a href="${blocoInf.link}" target="_blank"> Para saber mais clique aqui </a> </div>`;
         } 
-
-        // Se o conteúdo da pesquisa não tiver relação com alguma informação sobre algum animal escreve um aviso.
-        if (!resultados) {
-            resultados = `<p> O animal pesquisado não foi encontrado. </p>`
-        }
     }
 
+    if (!resultados) {
+            resultados = `<p> O animal pesquisado não foi encontrado. </p>`
+        }
+    
     // Substitui o conteúdo HTML da seção "resultados-pesquisa" pelos resultados gerados.
     section.innerHTML = resultados;
 }
