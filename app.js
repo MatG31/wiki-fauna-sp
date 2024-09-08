@@ -36,7 +36,6 @@ function pesquisar() {
         // Concatena a string 'resultados' com uma nova div que representa um resultado da pesquisa.
         // Utiliza template literals (``) para facilitar a construção da string e inserir as propriedades do objeto.
             resultados += `<div class="item-resultado"> <h2> ${blocoInf.nome} </h2> <p class="descricao-meta"> ${blocoInf.habitat} <br> ${blocoInf.dieta} <br> ${blocoInf.curiosidade} </p> <a href="${blocoInf.link}" target="_blank"> Para saber mais clique aqui </a> </div>`;
-            naoEncontrado = true;
         } 
 
         // Se o conteúdo da pesquisa não tiver relação com alguma informação sobre algum animal escreve um aviso.
