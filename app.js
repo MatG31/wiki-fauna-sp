@@ -39,7 +39,7 @@ function pesquisar() {
         } 
 
         // Se o conteúdo da pesquisa não tiver relação com alguma informação sobre algum animal escreve um aviso.
-        if (resultados == "") {
+        if (!resultados) {
             resultados = `<p> O animal pesquisado não foi encontrado. </p>`
         }
     }
