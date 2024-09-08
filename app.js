@@ -9,6 +9,7 @@ function pesquisar() {
 
     campoPesquisa = campoPesquisa.toLowerCase();
 
+    // Verifica se o campo foi preenchido e escreve uma mensagem na tela.    
     if (campoPesquisa == ""){
         section.innerHTML = `<p> Preencha o campo antes de pesquisar. </p>`
         return;       
@@ -29,13 +30,16 @@ function pesquisar() {
         habitatMin = blocoInf.habitat.toLowerCase();
         curiosidadeMin = blocoInf.curiosidade.toLowerCase();
         marcadoresMin = blocoInf.marcadores.toLowerCase();
+        
+        // Se o conteúdo da pesquisa tiver relação com alguma informação sobre algum animal é demonstrado um "card" sobre o mesmo
         if (nomeMin.includes(campoPesquisa) || dietaMin.includes(campoPesquisa) || habitatMin.includes(campoPesquisa) || curiosidadeMin.includes(campoPesquisa) || marcadoresMin.includes(campoPesquisa)) {
         // Concatena a string 'resultados' com uma nova div que representa um resultado da pesquisa.
         // Utiliza template literals (``) para facilitar a construção da string e inserir as propriedades do objeto.
             resultados += `<div class="item-resultado"> <h2> ${blocoInf.nome} </h2> <p class="descricao-meta"> ${blocoInf.habitat} <br> ${blocoInf.dieta} <br> ${blocoInf.curiosidade} </p> <a href="${blocoInf.link}" target="_blank"> Para saber mais clique aqui </a> </div>`;
         } 
 
-        if (!resultados) {
+        // Se o conteúdo da pesquisa não tiver relação com alguma informação sobre algum animal escreve um aviso.
+        if (resultados == "") {
             resultados = `<p> O animal pesquisado não foi encontrado. </p>`
         }
     }
