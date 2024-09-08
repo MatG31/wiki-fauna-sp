@@ -23,9 +23,6 @@ function pesquisar() {
     let curiosidadeMin = "";
     let marcadoresMin = "";
 
-    //Váriavel para fazer a mensagem de "O animal pesquisado não foi encontrado" só aparecer quando não houver nenhum marcador relacionado
-    let naoEncontrado = false;
-
     // Itera sobre cada animal no array 'infoFauna'.
     for (let blocoInf of infoFauna) {
         nomeMin = blocoInf.nome.toLowerCase();
@@ -33,6 +30,9 @@ function pesquisar() {
         habitatMin = blocoInf.habitat.toLowerCase();
         curiosidadeMin = blocoInf.curiosidade.toLowerCase();
         marcadoresMin = blocoInf.marcadores.toLowerCase();
+        
+        //Váriavel para fazer a mensagem de "O animal pesquisado não foi encontrado" só aparecer quando não houver nenhum marcador relacionado
+        let naoEncontrado = false;
         
         // Se o conteúdo da pesquisa tiver relação com alguma informação sobre algum animal é demonstrado um "card" sobre o mesmo
         if (nomeMin.includes(campoPesquisa) || dietaMin.includes(campoPesquisa) || habitatMin.includes(campoPesquisa) || curiosidadeMin.includes(campoPesquisa) || marcadoresMin.includes(campoPesquisa)) {
