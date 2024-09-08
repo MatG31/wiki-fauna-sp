@@ -24,7 +24,7 @@ let infoFauna = [
         nome: "Jararaca",
         habitat: "Vive em: florestas tropicais e mata atlântica",
         dieta: "Alimenta-se de: roedores, anfíbios, aves e répteis",
-        curiosidade: "A ponta de sua cauda quando filhote é geralmente de cor mais clara e ela a utiliza como um isca",
+        curiosidade: "A ponta de sua cauda quando filhote é geralmente de cor mais clara e ela a utiliza como uma isca",
         link: "https://capital.sp.gov.br/web/meio_ambiente/w/servicos/fauna/especies_da_cidade/13426",
         marcadores: "cobra venenosa perigoso réptil"
     },
