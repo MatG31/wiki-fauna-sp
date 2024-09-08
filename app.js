@@ -23,6 +23,9 @@ function pesquisar() {
     let curiosidadeMin = "";
     let marcadoresMin = "";
 
+    //Váriavel para fazer a mensagem de "O animal pesquisado não foi encontrado" só aparecer quando não houver nenhum marcador relacionado
+    let naoEncontrado = false;
+
     // Itera sobre cada animal no array 'infoFauna'.
     for (let blocoInf of infoFauna) {
         nomeMin = blocoInf.nome.toLowerCase();
@@ -36,10 +39,11 @@ function pesquisar() {
         // Concatena a string 'resultados' com uma nova div que representa um resultado da pesquisa.
         // Utiliza template literals (``) para facilitar a construção da string e inserir as propriedades do objeto.
             resultados += `<div class="item-resultado"> <h2> ${blocoInf.nome} </h2> <p class="descricao-meta"> ${blocoInf.habitat} <br> ${blocoInf.dieta} <br> ${blocoInf.curiosidade} </p> <a href="${blocoInf.link}" target="_blank"> Para saber mais clique aqui </a> </div>`;
+            naoEncontrado = true;
         } 
 
         // Se o conteúdo da pesquisa não tiver relação com alguma informação sobre algum animal escreve um aviso.
-        if (resultados == "") {
+        if (resultados == "" & naoEncontrado = false) {
             resultados = `<p> O animal pesquisado não foi encontrado. </p>`
         }
     }
