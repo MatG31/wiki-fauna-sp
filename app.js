@@ -31,9 +31,6 @@ function pesquisar() {
         curiosidadeMin = blocoInf.curiosidade.toLowerCase();
         marcadoresMin = blocoInf.marcadores.toLowerCase();
         
-        //Váriavel para fazer a mensagem de "O animal pesquisado não foi encontrado" só aparecer quando não houver nenhum marcador relacionado
-        let naoEncontrado = false;
-        
         // Se o conteúdo da pesquisa tiver relação com alguma informação sobre algum animal é demonstrado um "card" sobre o mesmo
         if (nomeMin.includes(campoPesquisa) || dietaMin.includes(campoPesquisa) || habitatMin.includes(campoPesquisa) || curiosidadeMin.includes(campoPesquisa) || marcadoresMin.includes(campoPesquisa)) {
         // Concatena a string 'resultados' com uma nova div que representa um resultado da pesquisa.
@@ -43,7 +40,7 @@ function pesquisar() {
         } 
 
         // Se o conteúdo da pesquisa não tiver relação com alguma informação sobre algum animal escreve um aviso.
-        if (resultados == "" & naoEncontrado = false) {
+        if (resultados == "") {
             resultados = `<p> O animal pesquisado não foi encontrado. </p>`
         }
     }
