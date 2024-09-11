@@ -40,7 +40,7 @@ function pesquisar() {
     }
 
     if (!resultados) {
-            resultados = `<p> O animal pesquisado não foi encontrado. </p>`
+            resultados = `<p class = "nEncontrado"> O animal pesquisado não foi encontrado. </p>`
         }
     
     // Substitui o conteúdo HTML da seção "resultados-pesquisa" pelos resultados gerados.
