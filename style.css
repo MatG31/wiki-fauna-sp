@@ -1,6 +1,6 @@
 /* Estiliza o corpo da página */
 body {
-    font-family: "Gill Sans", sans-serif; /* Define a fonte padrão */
+    font-family: "Trebuchet MS", sans-serif; /* Define a fonte padrão */
     background-image: url('imagem_mata_atlantica.png');
     background-size: cover;
     display: flex; /* Usa Flexbox para layout */
