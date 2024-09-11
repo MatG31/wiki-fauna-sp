@@ -19,6 +19,8 @@ h1 {
     color: #FFFFFF; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
     letter-spacing: 0.4rem; /* Espaçamento entre letras */
+    border-radius: 1.5rem;
+    background-color: #30475E;
 }
 
 /* Estiliza as seções da página */
