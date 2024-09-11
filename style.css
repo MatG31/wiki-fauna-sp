@@ -61,7 +61,12 @@ section button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
 }
 
+/* Estiliza as fontes dos resultados inválidos */
 .nEncontrado {
+    color: #FFFFFF;
+}
+
+.inputVazio {
     color: #FFFFFF;
 }
 
