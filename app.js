@@ -11,7 +11,7 @@ function pesquisar() {
 
     // Verifica se o campo foi preenchido e escreve uma mensagem na tela.    
     if (campoPesquisa == ""){
-        section.innerHTML = `<p> Preencha o campo antes de pesquisar. </p>`
+        section.innerHTML = `<p class = "inputVazio" > Preencha o campo antes de pesquisar. </p>`
         return;       
     }
 
