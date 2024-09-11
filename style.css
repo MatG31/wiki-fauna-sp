@@ -19,7 +19,8 @@ h1 {
     color: #FFFFFF; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
     letter-spacing: 0.4rem; /* Espaçamento entre letras */
-    border-radius: 2.5rem;
+    border-radius: 2.5rem; /*Boarda arredondada do título*/
+    padding: 2rem; /* Espaçamento interno*/
     background-color: #30475E;
 }
 
